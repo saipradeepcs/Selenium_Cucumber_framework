@@ -1,0 +1,38 @@
+[
+	{
+		"firstName": "Pradeep",
+		"lastName": "CS",
+		"age": "26",
+		"emailAddress": "pradeepcs@gmail.com",
+		"address": {
+			"streetAddress": "12123 sycamore edge drive",
+			"city": "Cincinnati",
+			"postCode": "45231",
+			"state": "Ohio",
+			"country": "United States (US)",
+			"county": ""
+		},
+		"phoneNumber": {
+			"home": "5135521456",
+			"mob": "123457896"
+		}
+	},
+	{
+		"firstName": "Nick",
+		"lastName": "Dunne",
+		"age": "29",
+		"emailAddress": "nickd@gmail.com",
+		"address": {
+			"streetAddress": "12123 sycamore edge drive",
+			"city": "Cincinnati",
+			"postCode": "45231",
+			"state": "Ohio",
+			"country": "United States (US)",
+			"county": ""
+		},
+		"phoneNumber": {
+			"home": "5135521456",
+			"mob": "123457896"
+		}
+	}
+]
