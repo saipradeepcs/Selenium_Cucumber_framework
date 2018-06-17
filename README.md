@@ -12,12 +12,12 @@ You need to have following software(s)/tools installed in your machine
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java
 * [Cucumber eclipse plug-in] (http://cucumber.github.com/cucumber-eclipse/update-site) - BDD language used
-* [junit] (This comes by default when you create a new Maven Project)
-* [Selenium 3.11.0] (https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.12.0)
-* [Cucumber JVM: JUnit » 1.2.5] (https://mvnrepository.com/artifact/info.cukes/cucumber-junit/1.2.5)
-* [Cucumber JVM: Java » 1.2.5] (https://mvnrepository.com/artifact/info.cukes/cucumber-java/1.2.5)
-* [Cucumber JVM: PicoContainer » 1.2.4] (https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer/1.2.4) - Pico Container to share test context
-* [Cucumber Extents Report] (https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport/3.0.2)
+* [junit](This comes by default when you create a new Maven Project)
+* [Selenium 3.11.0](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.12.0)
+* [Cucumber JVM: JUnit » 1.2.5](https://mvnrepository.com/artifact/info.cukes/cucumber-junit/1.2.5)
+* [Cucumber JVM: Java » 1.2.5](https://mvnrepository.com/artifact/info.cukes/cucumber-java/1.2.5)
+* [Cucumber JVM: PicoContainer » 1.2.4](https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer/1.2.4) - Pico Container to share test context
+* [Cucumber Extents Report](https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport/3.0.2)
 ## Running the tests
 
 Once you pull the project. Navigate to folder src/test/java->TestRunner_Smokes->Run as Junit Test
