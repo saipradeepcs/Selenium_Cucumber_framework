@@ -1,6 +1,5 @@
 # Selenium_Cucumber_framework
-A Behavior Driven Development framework
-
+A Behavior Driven Development framework which uses Page Object Model and Singleton design pattern
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -42,6 +41,71 @@ For example: All I'm doing here is asking junit to run the test with below metni
 		monochrome = true,
 		plugin =  { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"} )
 ```
+* Now JVM will look for a feature file comprsing features located at "src/test/resources/functionalTests"
+* Every step in a feature requires a corresponding step defintion file. That's what "#glue" in the above "CucumberOptions" define. It is telling that all step defintions are located at "stepDefinitions"(which is a package located in src/test/java)
+
+```
+Feature File example: 
+
+Feature: Automated End2End Tests
+Description: This feature tests E2E scenario of a shopping website
+
+@SmokeTest
+Scenario Outline: user places an order by search an item
+Given user is on hom page
+When he searches for "<item>"
+And choose to buy first item from search results
+And moves to checkout from cart
+And enters "<customer>" Billings details on checkout page
+And selects same delivery address
+And selects mode of payment as "check"
+And places the order
+Then I see the order page with order number
+Examples:
+	|customer|item|
+	|Pradeep|dress|
+	|nick|shoes|
+	
+```
+
+```
+StepDefinition file example:
+
+package stepDefinitions;
+
+import cucumber.TestContext;
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+import managers.FileReaderManager;
+import pageObjects.HomePage;
+import testDataTypes.Items;
+
+public class HomePageSteps {
+
+	HomePage homePage;
+	TestContext testContext;
+	public HomePageSteps(TestContext context) {
+		testContext = context;
+		homePage = testContext.getPageObjectManager().getHomePage();
+	}
+
+	@Given("^user is on hom page$")
+	public void user_is_on_hom_page() throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		homePage.navigateTo_HomePage();
+
+	}
+
+	@When("^he searches for \"([^\"]*)\"$")
+	public void he_searches_for(String itemname) throws Throwable {
+		// Write code here that turns the phrase above into concrete actions
+		Items item = FileReaderManager.getInstance().getJsonReader().getITemByName(itemname);
+		homePage.perform_Search(item);
+	}
+}
+
+```
+
 
 ## Authors
 
