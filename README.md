@@ -11,7 +11,7 @@ You need to have following software(s)/tools installed in your machine
 * [Eclipse IDE](http://www.eclipse.org/downloads/eclipse-packages/) - IDE used
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) - Java
-* [Cucumber eclipse plug-in] (http://cucumber.github.com/cucumber-eclipse/update-site) - BDD language used
+* [Cucumber eclipse plug-in](http://cucumber.github.com/cucumber-eclipse/update-site) - BDD language used
 * [junit](This comes by default when you create a new Maven Project)
 * [Selenium 3.11.0](https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java/3.12.0)
 * [Cucumber JVM: JUnit » 1.2.5](https://mvnrepository.com/artifact/info.cukes/cucumber-junit/1.2.5)
