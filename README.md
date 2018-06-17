@@ -33,5 +33,22 @@ Options defined @CucumberOptions annotation are very important as these options 
 * report generation plug-ins if any 
 
 ```
-Give an example
+For example: All I'm doing here is asking junit to run the test with below metnioned annotations and options
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "src/test/resources/functionalTests",
+		glue = "stepDefinitions",
+		tags = "@SmokeTest",
+		monochrome = true,
+		plugin =  { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"} )
 ```
+
+## Authors
+
+* **Sai Pradeep**
+
+## Acknowledgments
+
+* http://toolsqa.com/
+* Inspiration - LAKSHAY SHARMA 
+
