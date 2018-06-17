@@ -42,7 +42,7 @@ For example: All I'm doing here is asking junit to run the test with below metni
 		plugin =  { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"} )
 ```
 * Now JVM will look for a feature file comprsing features located at "src/test/resources/functionalTests"
-* Every step in a feature requires a corresponding step defintion file. That's what "#glue" in the above "CucumberOptions" define. It is telling that all step defintions are located at "stepDefinitions"(which is a package located in src/test/java)
+* Every step in a feature requires a corresponding step defintion file. That's what **_glue_** in the above "CucumberOptions" define. It is telling that all step defintions are located at "stepDefinitions"(which is a package located in src/test/java)
 
 ```
 Feature File example: 
